@@ -1,5 +1,8 @@
 This project is a homework for Mintos.
 
+Try it out here:
+https://main--brilliant-crisp-c45042.netlify.app/
+
 ---
 ## Requirements
 

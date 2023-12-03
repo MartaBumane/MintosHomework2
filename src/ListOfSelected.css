@@ -1,0 +1,60 @@
+
+.gridContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.listOfSelected {
+    width: 100%;
+    min-height: 40px;
+    display: grid;
+    padding-bottom: 15px;
+}
+
+.selectedItem {
+    position: absolute;
+}
+
+.selectedCurrencyCode {
+    background-color: #e5e5e5;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: #ececec;
+    pointer-events: none;
+    height: 22px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    height: 10px;
+    width: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    pointer-events: all;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.closeButton{
+    transform: translateY(-10%);
+}

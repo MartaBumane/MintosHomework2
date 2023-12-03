@@ -1,0 +1,72 @@
+.gridContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+  
+.gridItem {
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    border-radius: 1px;
+    background-color: #ececec;
+    color: #545970;
+    cursor: pointer;
+    height: 22px;
+    width: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &.selected{
+        background: white;
+    }
+
+}
+
+.gridItem:hover:not(.selected) {
+    background-color: #dbdbdb;
+    border-color: #c6c6c6;
+
+    .checkbox {
+        background: #dbdbdb;
+    }
+}
+  
+.currencyCode {
+    font-size: 1.3em;
+    font-weight: 600;
+    pointer-events: none;
+}
+  
+.checkbox {
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: #ececec;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #c6c6c6;
+    position: relative;
+    cursor: pointer;
+
+    &.selected{
+        background: white;
+    }
+}
+
+.checkbox:checked {
+    background: white;
+}
+.checkbox:checked:after {
+    content: "X";
+    color: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+}
